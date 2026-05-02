@@ -13,7 +13,7 @@ st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 # ========================
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/clean_data.csv")
+    df = pd.read_csv("data/main_data.csv")
     
     # Convert date
     df['dteday'] = pd.to_datetime(df['dteday'])
